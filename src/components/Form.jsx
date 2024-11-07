@@ -234,7 +234,7 @@ const WebsiteForm = () => {
                 {currentStep === 3 && (
                     <div className="my-4 flex justify-center">
                         <ReCAPTCHA
-                            sitekey="6LfN_XYqAAAAADEnyr0dvQv-PnqTLoRcPA6kc1FK"
+                            sitekey="6Ld_X3cqAAAAAPtrA9yJ_Tz4FUMI9yriSRgbNu3w"
                             onChange={handleCaptchaChange}
                         />
                     </div>
