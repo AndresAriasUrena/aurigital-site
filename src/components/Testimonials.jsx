@@ -1,4 +1,4 @@
-import { Abraham, Tulsi, Calo, ImageShadow, BGTestimonials, bgtestimonialsPoster } from "../assets";
+import { Abraham, Tulsi, Calo, Daniel, ImageShadow, BGTestimonials, bgtestimonialsPoster } from "../assets";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -61,6 +61,10 @@ const Testimonials = () => {
     {
       image: Calo,
       content: t("testimonials.calo.content"),
+    },
+    {
+      image: Daniel,
+      content: t("testimonials.daniel.content"),
     },
   ];
 

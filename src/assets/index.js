@@ -34,6 +34,7 @@ import aurigitalHeroMob from "./Videos/aurigital-hero-mob.mp4";
 import Abraham from "./Images/abraham.avif";
 import Tulsi from "./Images/tulsi.avif";
 import Calo from "./Images/calo.avif";
+import Daniel from "./Images/daniel.avif";
 import PortfolioImg from "./Images/portfolio.avif";
 import PortfolioMob from "./Images/portfoliomob.avif";
 
@@ -61,6 +62,7 @@ export {
   Abraham,
   Tulsi,
   Calo,
+  Daniel,
   PortfolioImg,
   PortfolioMob,
   Support1,
