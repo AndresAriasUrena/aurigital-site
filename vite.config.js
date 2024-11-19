@@ -3,24 +3,25 @@ import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 
 export default defineConfig({
+  assetsInclude: ['**/*.pdf'], // Add this line to handle PDF imports
   plugins: [
     react(),
     // Brotli compression
     viteCompression({
       algorithm: "brotliCompress",
-      ext: ".br", // File extension for Brotli
-      threshold: 10240, // Compress files larger than 10 KB
+      ext: ".br", 
+      threshold: 10240, 
       compressionOptions: {
-        level: 11, // Maximum Brotli compression level
+        level: 11, 
       },
-      deleteOriginFile: false, // Keep original files for fallback
+      deleteOriginFile: false, 
     }),
     // Gzip compression as backup
     viteCompression({
       algorithm: "gzip",
-      ext: ".gz", // File extension for Gzip
-      threshold: 10240, // Compress files larger than 10 KB
-      deleteOriginFile: false, // Keep original files for fallback
+      ext: ".gz", 
+      threshold: 10240, 
+      deleteOriginFile: false, 
     }),
   ],
 });
